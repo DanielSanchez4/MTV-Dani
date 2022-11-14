@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto familia</title>
+</head>
+<body>
+    <h1 style="color: green;"> Informacion {{familia}} </h1>
+
+    <p style="color: red;"> Integrantes de familia </p>
+
+    <ul>
+
+        {% for Nombres in informacion %}
+        <li> {{Nombres}} </li>
+        
+        {% endfor %}
+    </ul>
+
+    <ul>
+
+        {% for Edades in Edad%}
+        <li> {{Edades}} </li>
+        
+        {% endfor %}
+    </ul>
+
+    
+    <img 
+    style="max-width: 500px ;"
+    src="https://images.pexels.com/photos/225767/pexels-photo-225767.jpeg?cs=srgb&dl=pexels-markus-spiske-225767.jpg&fm=jpg&_gl=1*fzuw2m*_ga*MTc5NTg5Mzk2My4xNjY4MTQ4ODcx*_ga_8JE65Q40S6*MTY2ODIwMjYyMy4yLjEuMTY2ODIwMjYyNi4wLjAuMA.." alt="">
+
+</body>
+</html>
